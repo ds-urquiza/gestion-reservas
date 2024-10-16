@@ -148,11 +148,12 @@ input {
     width: 100%;
     min-width: 5em;
     padding: 2em 1.2em; 
-    position: fixed;   
+    /* position: fixed;   
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; */
+    /* align-items: center; */
     letter-spacing: 1px;
+
 }
 
 .header .a{
@@ -181,4 +182,48 @@ input {
 .header .li{
     margin: 0 1em;
     list-style: none;
+}
+
+/* ----------RESERVAS----------------- */
+
+.tablaReserva , .tablaHabitacion{
+	margin: 5em;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
+
+.nuevaReserva , .nuevaHabitacion{
+	border-radius: 3px;
+}
+
+.modificar {
+	border-radius: 3px;
+	background-color: violet;
+	color: #dddddd;
+	margin: 0;
+	width: 1em;
+}
+.cancelar{
+	border-radius: 3px;
+	margin: 0;
+	width: 1em;
+}
+
+.formReserva , .formHabitacion , .formCliente{
+	width: 	40%;
+	margin: 2.5em auto;
+	text-align: center;
 }
