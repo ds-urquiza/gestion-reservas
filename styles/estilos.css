@@ -227,3 +227,18 @@ table {
 	margin: 2.5em auto;
 	text-align: center;
 }
+
+.filtro{
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	
+	border: 1px solid black;
+	padding: 1em;
+}
+
+.buscar{
+	width: 30%;
+	border-radius: 3px;
+	margin: 0;
+}
