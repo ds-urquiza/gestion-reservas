@@ -18,4 +18,4 @@ function login (){
     }
 }
 
-/*-------------------------------------------------------  */
+/*---------------MOSTRAR RESULTADO ASINCRONICO DEL CÁLCULO DE RESERVAS DESDE / HASTA ----------------------------  */

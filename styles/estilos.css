@@ -186,8 +186,8 @@ input {
 
 /* ----------RESERVAS----------------- */
 
-.tablaReserva , .tablaHabitacion{
-	margin: 5em;
+.tablaReserva , .tablaHabitacion {
+	margin: 2em 5em;
 }
 table {
 	font-family: arial, sans-serif;
@@ -242,3 +242,34 @@ table {
 	border-radius: 3px;
 	margin: 0;
 }
+
+.calculoReservas{
+	display: block;
+	border: 1px solid black;
+	padding: 1em;
+}
+.calculoReservas h3{
+	text-align: center;
+	margin-top: 1em;
+	color: purple;
+}
+.inputFecha{
+	width: 30%;
+	border-radius: 3px;
+	margin: 0;
+}
+
+.contenedorFiltro-Calculo{
+	display: flex;
+	justify-content: space-between;
+}
+.btnCalcular , .btnGuardar{
+	border-radius: 3px;
+	margin: 0;
+}
+
+.tablaModifica , .contenedorGuardar{
+	width: 80%;
+	margin: 2em 5em;
+}
+

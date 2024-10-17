@@ -29,12 +29,11 @@
               <a href="reserva-alta.html">Nueva Reserva</a>
             </button>
 
-            <br>
-            <br>
-
+<br>
+<br>
             <div class="filtro">
             <select name="" id="" class="buscar">
-                <option value="">Buscar</option>
+                <option value="">Filtrar</option>
                 <option value="">Cliente</option>
                 <option value="">Habitación</option>
                 <option value="">Fecha</option>
@@ -44,9 +43,23 @@
             <input type="text" class="buscar">
             <button class="buscar">Buscar</button>
             </div>
+        
+            <br>
+            <div class="calculoReservas">
+              <div>
+              <label for="" class="">Cantidad de reservas:</label>
+              <input type="date" class="inputFecha">
+              <input type="date" class="inputFecha">
+              <button class="btnCalcular">Calcular</button>
+              </div>
 
-            <br>
-            <br>
+              <div>
+                <h3>ACÁ SE MOSTRARÁ EL CALCULO DE RESERVAS FILTRADO POR FECHAS</h3>
+              </div>
+
+            </div>
+
+            <br><br>
             <table>
               <tr>
                 <th>Id</th>
@@ -64,7 +77,7 @@
                 <td>Germany</td>
                 <td>Germany</td>
                 <td>Germany</td>
-                <td> <button class="modificar" type="button">M</button> 
+                <td> <button class="modificar" type="button"><a href="reserva-modifica.html"> M</a></button> 
                      <button class="cancelar" type="button">C</button>
                 </td>
               </tr>
@@ -81,6 +94,7 @@
               </tr>
             </table>
             
+          
         </main>
 </body>
 </html>
