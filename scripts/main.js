@@ -19,3 +19,10 @@ function login (){
 }
 
 /*---------------MOSTRAR RESULTADO ASINCRONICO DEL CÁLCULO DE RESERVAS DESDE / HASTA ----------------------------  */
+
+function cartelEspera(){
+     
+     document.querySelector('#btnCalcular').disabled = true;     
+     document.querySelector('#resultado p').innerHTML = "Calculando...";
+     
+}
