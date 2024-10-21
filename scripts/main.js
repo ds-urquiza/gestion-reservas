@@ -1,6 +1,6 @@
 
 /* ----------------USUARIO ADMINISTRADOR------------------- */
-const usuarioAdmin = "admnistracion@hotel.com"
+/* const usuarioAdmin = "admnistracion@hotel.com"
 const passAdmin = "123456"
 
 document.getElementById("btn-ingresar").addEventListener("click", login)
@@ -17,7 +17,7 @@ function login (){
         alert("Usuario o contraseña inválidos")
     }
 }
-
+ */
 /*---------------MOSTRAR RESULTADO ASINCRONICO DEL CÁLCULO DE RESERVAS DESDE / HASTA ----------------------------  */
 
 function cartelEspera(){
@@ -25,4 +25,9 @@ function cartelEspera(){
      document.querySelector('#btnCalcular').disabled = true;     
      document.querySelector('#resultado p').innerHTML = "Calculando...";
      
+}
+
+function mostrarReservas (){
+    cartelEspera()
+
 }

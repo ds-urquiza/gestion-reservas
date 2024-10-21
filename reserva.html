@@ -31,33 +31,36 @@
 
 <br>
 <br>
-            <div class="filtro">
-            <select name="" id="" class="buscar">
-                <option value="">Filtrar</option>
-                <option value="">Cliente</option>
-                <option value="">Habitación</option>
-                <option value="">Fecha</option>
-                <option value="">Estado</option>
-            </select>
+<!-- FILTRO PARA BUSCAR ESTADO DE RESERVAS -->
 
-            <input type="text" class="buscar">
-            <button class="buscar">Buscar</button>
+<!-- estados de la reserva: confirmada, cancelada o pendiente. -->
+            <div class="filtro">
+            <select name="" id="" class="buscar" onchange="estadoReserva(this.value)">
+              <option value="e">Estado de reserva</option>
+              <option value="pen">Pendiente</option>
+              <option value="con">Confirmada</option>
+              <option value="can">Cancelada</option>
+            </select>
+            <div id="tipoEstado"></div>
+            <input type="submit" class="buscar" value="Ver reservas" disabled>
+            <!-- <button class="buscar">Buscar</button> -->
             </div>
         
+<!------- CALCULO DE RESERVAS ------->
             <br>
-            <div class="calculoReservas">
-              <div>
-              <label for="" class="">Cantidad de reservas:</label>
-              <input type="date" class="inputFecha">
-              <input type="date" class="inputFecha">
-              <button class="btnCalcular" id="btnCalcular" type="button">Calcular</button>
-              </div>
-
-              <div id="resultado">
-                <h3>ACÁ SE MOSTRARÁ EL CALCULO DE RESERVAS FILTRADO POR FECHAS</h3>
-              </div>
-
-            </div>
+            
+              <form action="datos_reserva.php" method="get" class="calculoReservas">
+              <label for="cantidadReserva" class="">Cantidad de reservas:</label>
+              <input type="date" class="inputFecha" value="">
+              <input type="date" class="inputFecha" value="">
+              <input type="submit" value="Calcular reservas">
+              
+                <div>
+                <h3>Total de reservas:</h3>
+                <div id="resultado"></div>
+                </div>
+              </form> 
+            
 
             <br><br>
             <table>
