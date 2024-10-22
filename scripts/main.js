@@ -18,16 +18,16 @@ function login (){
     }
 }
  */
-/*---------------MOSTRAR RESULTADO ASINCRONICO DEL CÁLCULO DE RESERVAS DESDE / HASTA ----------------------------  */
 
-function cartelEspera(){
-     
-     document.querySelector('#btnCalcular').disabled = true;     
-     document.querySelector('#resultado p').innerHTML = "Calculando...";
-     
-}
+/*---------------FILTRO DE RESERVA ----------------------------  */
+document.addEventListener("DOMContentLoaded", function(){
+    const formFiltro = document.querySelector('#filtroEstado')
 
-function mostrarReservas (){
-    cartelEspera()
 
-}
+    formFiltro.addEventListener('submit', function(buscaEstado){
+        buscaEstado.preventDefault() //manejo el envio del formulario de forma personallizada
+
+        
+    })
+})
+

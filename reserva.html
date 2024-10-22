@@ -34,6 +34,7 @@
 <!-- FILTRO PARA BUSCAR ESTADO DE RESERVAS -->
 
 <!-- estados de la reserva: confirmada, cancelada o pendiente. -->
+            <form action="datos_reserva.php" method="post" id="filtroEstado">
             <div class="filtro">
             <select name="" id="" class="buscar" onchange="estadoReserva(this.value)">
               <option value="e">Estado de reserva</option>
@@ -43,9 +44,8 @@
             </select>
             <div id="tipoEstado"></div>
             <input type="submit" class="buscar" value="Ver reservas" disabled>
-            <!-- <button class="buscar">Buscar</button> -->
             </div>
-        
+          </form>
 <!------- CALCULO DE RESERVAS ------->
             <br>
             
@@ -56,7 +56,7 @@
               <input type="submit" value="Calcular reservas">
               
                 <div>
-                <h3>Total de reservas:</h3>
+                <h3>La recudación de la fecha seleccionada es:</h3>
                 <div id="resultado"></div>
                 </div>
               </form> 
