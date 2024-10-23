@@ -21,7 +21,7 @@ class Reserva {
         $this ->habitacion =$habitacion;
         $this ->fechaIngreso =$fechaIngreso;
         $this ->fechaSalida =$fechaSalida;
-        $this ->estado = 'pendiente'; /* pendiente de reserva */
+        $this ->estado = 'disponible'; /* estado inicial de la reserva */
         $this ->precioTotal = $precioTotal;
 
     }
@@ -31,6 +31,9 @@ class Reserva {
         $dias = ($this -> fechaSalida) - ($this -> fechaIngreso);
         $this -> precioTotal = $dias * $precioPorNoche;
     }
+    
+
+   
 
     /* metodos getter y setter para cambiar los valores de las propiedades */
 
@@ -48,6 +51,22 @@ class Reserva {
 
     public function setHabitacion(){
         $this -> habitacion = $habitacion;
+    }
+
+    public function getFechaI(){
+        return $this -> fechaIngreso;
+    }
+
+    public function setFechaI(){
+        $this -> fechaIngreso = $fechaIngreso;
+    }
+
+    public function getFechaS(){
+        return $this -> fechaSalida;
+    }
+
+    public function setFechaS(){
+        $this -> fechaSalida = $fechaSalida;
     }
 
      public function getPrecioTotal(){
