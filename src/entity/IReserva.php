@@ -1,7 +1,10 @@
 <?php
 
 interface IReserva {
-    public function getCliete();
+    public function getId();
+    public function getFechaIngreso();
+    public function getFechaSalida();
     public function getHabitacion();
-    public function getPrecioTotal();
+    public function getClienteNombre();
+    
 }

@@ -1,32 +1,43 @@
 <?php
 
-/* namespace DsUrquiza\GestionHotel\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
-#[ORM\Entity(repositoryClass: clientesrepository::class)]
-#[ORM\Table(name: "clientes")]
- */
 class Cliente {
+   
+    private $idCliente;
     private $nombre;
     private $apellido;
     private $email;
-    private $phone;
 
+    // Constructor
+    public function __construct( $nombre, $apellido, $email) {
+        $this->nombre = $nombre;
+        $this->apellido = $apellido;
+        $this->email = $email;
+    }
+
+    // Getters y Setters
     public function getId(): ?int {
         return $this->id;
     }
 
-    public function getName(): ?string {
-        return $this->name;
+    public function getNombre(): string {
+        return $this->nombre;
     }
 
-    public function setName(string $name): self {
-        $this->name = $name;
+    public function setNombre(string $nombre): self {
+        $this->nombre = $nombre;
         return $this;
     }
 
-    public function getEmail(): ?string {
+    public function getTelefono(): string {
+        return $this->telefono;
+    }
+
+    public function setTelefono(string $telefono): void {
+        $this->telefono = $telefono;
+    }
+
+    public function getEmail(): string {
         return $this->email;
     }
 
@@ -34,13 +45,5 @@ class Cliente {
         $this->email = $email;
         return $this;
     }
-
-    public function getPhone(): ?string {
-        return $this->phone;
-    }
-
-    public function setPhone(string $phone): self {
-        $this->phone = $phone;
-        return $this;
-    }
 }
+?>

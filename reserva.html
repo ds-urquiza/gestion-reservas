@@ -33,23 +33,20 @@
 <br>
 <!-- FILTRO PARA BUSCAR ESTADO DE RESERVAS -->
 
-<!-- estados de la reserva: confirmada, cancelada o pendiente. -->
             <form action="datos_reserva.php" method="post" id="filtroEstado">
             <div class="filtro">
             <select name="estado" id="" class="buscar" onchange="estadoReserva(this.value)">
               <option value="e">Estado de reserva</option>
-              <!-- <option value="pen">Pendiente</option> -->
               <option value="con">Confirmada</option>
               <option value="can">Cancelada</option>
             </select>
 
             <!-- con este div se deberá mostrar la reserva seleccionada -->
             <div id="tipoEstado"></div>
-            <input type="submit" class="buscar" value="Ver reservas" disabled>
+            <input type="submit" class="buscar" value="Ver reservas">
             
           </div>
           </form>
-          <div id="muestraReservaConf"></div>
 
 <!------- CALCULO DE RESERVAS ------->
             <br>
@@ -60,7 +57,7 @@
               <input type="date" class="inputFecha" value="">
               <input type="submit" value="Calcular reservas">
               
-                <div>*
+                <div>
                 <h3>La recudación de la fecha seleccionada es:</h3>
                 <div id="resultado"></div>
                 </div>
@@ -69,15 +66,22 @@
 
             <br><br>
             <table>
+              
               <tr>
                 <!-- <th>Id</th> -->
                 <th>Cliente</th>
-                <th>Número habitación</th>
+                <th>Habitación</th>
                 <th>Fecha ingreso</th>
                 <th>Fecha salida</th>
                 <th>Estado</th>
+                <th>Total estadía</th>
                 <th>Modificar / Cancelar</th>
               </tr>
+
+
+              <!-- mostar las reservas segun el estado -->
+              <div id="muestraReservaConf"></div>
+
               <tr>
                 <!-- <td>125899</td> -->
                 <td>Romina Andes</td>
@@ -85,23 +89,12 @@
                 <td>10/09/2024</td>
                 <td>15/09/2024</td>
                 <td>Reservada</td>
-                <td>Precio total</td>
+                <td>$$$$$</td>
                 <td> <button class="modificar" type="button"><a href="reserva-modifica.html"> M</a></button> 
                      <button class="cancelar" type="button">C</button>
                 </td>
               </tr>
-              <tr>
-                <!-- <td>125899</td> -->
-                <td>Romina Andes</td>
-                <td>03</td>
-                <td>10/09/2024</td>
-                <td>15/09/2024</td>
-                <td>Reservada</td>
-                <td>Precio total</td>
-                <td> <button class="modificar" type="button">M</button> 
-                    <button class="cancelar" type="button">C</button>
-               </td>
-              </tr>
+              
             </table>
             
           

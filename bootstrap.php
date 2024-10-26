@@ -8,7 +8,7 @@ require_once "vendor/autoload.php";
 
 // Create a simple "default" Doctrine ORM configuration for Attributes
 $config = ORMSetup::createAttributeMetadataConfiguration(
-    paths: [__DIR__ . '/src/entity'],
+    paths: [__DIR__ . '/src'],
     isDevMode: true,
 );
 // or if you prefer XML
@@ -20,7 +20,7 @@ $config = ORMSetup::createAttributeMetadataConfiguration(
 // configuring the database connection
 $connection = DriverManager::getConnection([
     'driver' => 'pdo_sqlite',
-    'path' => __DIR__ . '/db.sqlite',
+    'path' => __DIR__ . '/db/database.sqlite',
 ], $config);
 
 // obtaining the entity manager
